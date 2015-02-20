@@ -2,7 +2,6 @@
 .env
 venv
 staticfiles
-client.cfg
 log
 output
 tmp
