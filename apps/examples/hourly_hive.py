@@ -3,7 +3,7 @@ Here's how to execute tasks in this file.
 
 $ export TD_API_KEY="..." (get the key from http://console.treasuredata.com/users/current)
 $ rm -fr tmp/;
-$ python tasks/hourly_hive.py Task1 --local-scheduler
+$ python apps/examples/hourly_hive.py Task1 --local-scheduler
 """
 
 import luigi
