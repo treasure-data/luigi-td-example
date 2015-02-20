@@ -6,7 +6,7 @@ Building the complex data pipeline on [Treasure Data](http://www.treasuredata.co
 
 ## List of Example Tasks
 
-[./apps/examples/](https://github.com/treasure-data/luigi-td-example/tree/master/apps/examples) directory contain a couple of basic workflow tasks, you can use as building blocks.
+[./apps/examples/](https://github.com/treasure-data/luigi-td-example/tree/master/apps/examples) directory contain a couple of basic workflow tasks, you can use as building blocks. All examples use [Luigi-TD](https://github.com/treasure-data/luigi-td), a library to make it easier to use TD from Luigi.
 
 Filename  | Description
 ------------- | -------------
@@ -19,7 +19,7 @@ Filename  | Description
 
 ## How to Develop My Tasks?
 
-You can of course add your own workflow. [Luigi Documentation](http://luigi.readthedocs.org/en/latest/) is the great place to start learning the basics of Luigi. After that, [Luigi-TD Documentation](http://luigi-td.readthedocs.org/en/latest/gettingstarted.html) will give you the specifics about how to use TD + Luigi.
+You can of course add your own workflow.
 
 
     # Create your app directory
@@ -37,6 +37,8 @@ You can of course add your own workflow. [Luigi Documentation](http://luigi.read
     # Commit
     $ git add apps/yours
     $ git commit -a -m 'add new task'
+
+[Luigi Documentation](http://luigi.readthedocs.org/en/latest/) is the great place to start learning the basics of Luigi. After that, [Luigi-TD Documentation](http://luigi-td.readthedocs.org/en/latest/gettingstarted.html) will give you the specifics about how to use TD + Luigi.
 
 ## How to Deploy?
 
@@ -68,3 +70,7 @@ To run this repository, you need to install `python` on your machine.
 
 - [Luigi Documentation](http://luigi.readthedocs.org/en/latest/)
 - [Luigi-TD Documentation](http://luigi-td.readthedocs.org/en/latest/gettingstarted.html)
+
+# Support
+
+Need a hand with something? Send us an email to support@treasure-data.com and we'll get back to you right away! For technical questions, use the treasure-data tag on Stack Overflow.
