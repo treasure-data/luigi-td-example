@@ -1,0 +1,14 @@
+{
+  "name": "Luigi Workflow Example working with Treasure Data",
+  "description": "Set up the example Luigi workflow working with Treasure Data in 30 seconds.",
+  "repository": "https://github.com/treasure-data/luigi-td-example",
+  "keywords": ["Luigi", "Workflow", "Treasure Data"],
+  "logo": "https://raw.githubusercontent.com/treasure-data/heroku-td-agent/master/logo.png",
+  "env": {
+     "TD_API_KEY": {
+       "description": "Override the Treasure Data API key with your own. Please acquire it from here (https://console.treasuredata.com/users/current).",
+       "required": true
+    }
+  },
+  "addons": []
+}
