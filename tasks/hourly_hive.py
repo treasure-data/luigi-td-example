@@ -2,6 +2,7 @@
 Here's how to execute tasks in this file.
 
 $ export TD_API_KEY="..." (get the key from http://console.treasuredata.com/users/current)
+$ rm -fr tmp/;
 $ python tasks/hourly_hive.py Task1 --local-scheduler
 """
 
@@ -30,6 +31,9 @@ WHERE
   "UTC")
 GROUP BY code
 """.format(scheduled_time = self.scheduled_time)
+
+    def output(self):
+        return luigi_td.ResultTarget('tmp/HourlyHive-{0}'.format(self.scheduled_time))
 
 if __name__ == '__main__':
     luigi.run()
