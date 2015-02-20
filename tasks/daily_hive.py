@@ -25,7 +25,7 @@ FROM
   www_access
 WHERE
   TD_TIME_RANGE(time,
-  TD_TIME_ADD("{scheduled_time}", "-1000d"),
+  TD_TIME_ADD("{scheduled_time}", "-1d"),
   "{scheduled_time}",
   "UTC")
 GROUP BY code

@@ -17,7 +17,7 @@ class Task1(luigi_td.Query):
     
     def query(self):
         return """\
--- Daily Job from Luigi-TD ({scheduled_time})
+-- Hourly Job from Luigi-TD ({scheduled_time})
 SELECT
   code,
   count(1) AS cnt
@@ -25,7 +25,7 @@ FROM
   www_access
 WHERE
   TD_TIME_RANGE(time,
-  TD_TIME_ADD("{scheduled_time}", "-1000d"),
+  TD_TIME_ADD("{scheduled_time}", "-1y"),
   "{scheduled_time}",
   "UTC")
 GROUP BY code
