@@ -46,9 +46,13 @@ Ready to deploy your first workflow? Here's a couple of ways to get started.
 
 #### Deploy on Heroku
 
-This repository is ready to deploy on [Heroku](http://www.heroku.com/) PaaS. Please just hit the button below, and will create Heroku app running [cron.py](https://github.com/treasure-data/luigi-td-example/blob/master/cron.py) who kicks workflows in hourly / daily basis. For further information about `cron.py`, please check [Scheduled Jobs with Custom Clock Processes in Python with APScheduler](https://devcenter.heroku.com/articles/clock-processes-python) documentation by Heroku.
+This repository is ready to deploy on [Heroku](http://www.heroku.com/) PaaS. Please just hit the button below, and will create Heroku app running [cron.py](https://github.com/treasure-data/luigi-td-example/blob/master/cron.py) who kicks workflows in hourly / daily basis.
+
+For further information about `cron.py`, please check [Scheduled Jobs with Custom Clock Processes in Python with APScheduler](https://devcenter.heroku.com/articles/clock-processes-python) documentation by Heroku.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+Please modify [client.cfg](https://github.com/treasure-data/luigi-td-example/blob/master/client.cfg) (Luigi's configuration file) to change the error notification email address. Other configuration variables can be found [here](http://luigi.readthedocs.org/en/latest/configuration.html).
 
 #### Deploy on Your Machine
 
@@ -69,6 +73,8 @@ To run this repository, you need to install `python` on your machine.
     
     # Run periodic Task
     $ python ./cron.py --local-scheduler
+
+Please modify [client.cfg](https://github.com/treasure-data/luigi-td-example/blob/master/client.cfg) (Luigi's configuration file) to change the error notification email address. Other configuration variables can be found [here](http://luigi.readthedocs.org/en/latest/configuration.html).
 
 # Resources
 
