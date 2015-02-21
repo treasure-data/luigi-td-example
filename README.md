@@ -48,9 +48,14 @@ Ready to deploy your first workflow? Here's a couple of ways to get started.
 
 This repository is ready to deploy on [Heroku](http://www.heroku.com/) PaaS. Please just hit the button below, and will create Heroku app running [cron.py](https://github.com/treasure-data/luigi-td-example/blob/master/cron.py) who kicks workflows in hourly / daily basis.
 
-For further information about `cron.py`, please check [Scheduled Jobs with Custom Clock Processes in Python with APScheduler](https://devcenter.heroku.com/articles/clock-processes-python) documentation by Heroku.
-
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+After that, please use `clock` Dyno instead of web dyno. You can configure via `heroku` command or from [Heroku dashboard](https://dashboard.heroku.com/apps).
+
+    $ heroku scale web=0 --app <YOUR_APP_NAME>
+    $ heroku scale clock=1 --app <YOUR_APP_NAME>
+
+For further information about `cron.py`, please check [Scheduled Jobs with Custom Clock Processes in Python with APScheduler](https://devcenter.heroku.com/articles/clock-processes-python) documentation by Heroku.
 
 Please modify [client.cfg](https://github.com/treasure-data/luigi-td-example/blob/master/client.cfg) (Luigi's configuration file) to change the error notification email address. Other configuration variables can be found [here](http://luigi.readthedocs.org/en/latest/configuration.html).
 
