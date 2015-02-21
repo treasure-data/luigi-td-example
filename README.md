@@ -1,6 +1,6 @@
 # Luigi + Treasure Data Workflow Example
 
-Building the complex data pipeline on [Treasure Data](http://www.treasuredata.com/)? Don't write adhoc scripts. This repository contains the example data workflow examples using [Luigi](http://luigi.readthedocs.org/en/latest/), a Python-based robust workflow engine.
+Building the complex data pipeline on [Treasure Data](http://www.treasuredata.com/)? Don't write adhoc scripts. This repository contains the example data workflow examples using [Luigi](http://luigi.readthedocs.org/en/latest/), a Python-based robust workflow engine. This example uses [Luigi-TD](https://github.com/treasure-data/luigi-td), which makes Luigi users easier to hit TD REST API from Luigi.
 
 ![Sample Workflow](http://i.gyazo.com/ccdea082b7f011b961d10a0b043618d5.png)
 
