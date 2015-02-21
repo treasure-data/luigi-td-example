@@ -32,10 +32,10 @@ You can of course add your own workflow.
     $ emacs -nw ./apps/yours/single_hive.py
     
     # Test
-    $ python ./tasks/single_hive.py YourTaskX --local-scheduler
+    $ python ./apps/yours/single_hive.py YourTaskX --local-scheduler
     
     # Commit
-    $ git add ./apps/yours
+    $ git add ./apps/yours/
     $ git commit -a -m 'add new task'
 
 [Luigi Documentation](http://luigi.readthedocs.org/en/latest/) is the great place to start learning the basics of Luigi. After that, [Luigi-TD Documentation](http://luigi-td.readthedocs.org/en/latest/gettingstarted.html) will give you the specifics about how to use TD + Luigi.
@@ -65,11 +65,11 @@ To run this repository, you need to install `python` on your machine.
     $ export TD_API_KEY="..."
     
     # Run specific Task
-    $ python ./tasks/sinble_hive.py TaskXXX --local-scheduler
+    $ python ./apps/examples/sinble_hive.py TaskXXX --local-scheduler
     
     # Remove intermediate results, and execute from scratch
     $ rm -fr ./tmp/
-    $ python ./tasks/sinble_hive.py TaskXXX --local-scheduler
+    $ python ./apps/examples/sinble_hive.py TaskXXX --local-scheduler
     
     # Run periodic Task
     $ python ./cron.py --local-scheduler
