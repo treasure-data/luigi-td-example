@@ -1,5 +1,5 @@
 {
-  "name": "Luigi Workflow Example working with Treasure Data",
+  "name": "Workflow Example with TD+Luigi",
   "description": "Set up the example Luigi workflow working with Treasure Data in 30 seconds.",
   "repository": "https://github.com/treasure-data/luigi-td-example",
   "keywords": ["Luigi", "Workflow", "Treasure Data"],
