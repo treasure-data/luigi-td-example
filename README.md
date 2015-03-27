@@ -70,11 +70,11 @@ To run this repository, you need to install `python` on your machine.
     $ export TD_API_KEY="..."
     
     # Run specific Task
-    $ python ./apps/examples/sinble_hive.py TaskXXX --local-scheduler
+    $ python ./apps/examples/single_hive.py TaskXXX --local-scheduler
     
     # Remove intermediate results, and execute from scratch
     $ rm -fr ./tmp/
-    $ python ./apps/examples/sinble_hive.py TaskXXX --local-scheduler
+    $ python ./apps/examples/single_hive.py TaskXXX --local-scheduler
     
     # Run periodic Task
     $ python ./cron.py --local-scheduler
